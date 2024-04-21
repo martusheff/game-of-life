@@ -4,7 +4,7 @@ import grid
 
 os.environ["SDL_VIDEO_CENTERED"] = '1'
 
-width, height = 1920, 1080
+width, height = 1080, 720
 size = (width, height)
 
 pygame.init()
@@ -14,11 +14,11 @@ clock = pygame.time.Clock()
 fps = 10
 
 black = (0,0,0)
-blue = (0,255,255)
+blue = (0,255,0)
 white = (255, 255, 255)
 
-scaler = 40
-offset = 1
+scaler = 5
+offset = 0
 
 Grid =  grid.Grid(width, height, scaler, offset)
 Grid.random2d_array()
